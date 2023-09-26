@@ -1,7 +1,11 @@
-import Container from "react-bootstrap/Container";
+import AboutMe from "@/pages/AboutMe";
 
 const Page = () => {
-  return <Container>Page</Container>;
+  return (
+    <>
+      <AboutMe></AboutMe>
+    </>
+  );
 };
 
 export default Page;

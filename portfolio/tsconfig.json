@@ -24,6 +24,8 @@
     "paths": {
       "@components/*": ["src/components/*"],
       "@css/*": ["src/css/*"],
+      "@pages/*": ["src/pages/*"],
+      "@assets/*": ["src/assets/*"],
       "@/*": ["src/*"]
     }
   },

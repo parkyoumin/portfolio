@@ -1,6 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import "@css/menu.scss";
 
 const Menu = () => {
   return (
@@ -8,11 +9,11 @@ const Menu = () => {
       <Navbar>
         <Container>
           <Navbar.Brand href="#home">Youmin's Portfolio</Navbar.Brand>
-          <Nav>
-            <Nav.Link href="#aboutme">About me</Nav.Link>
-            <Nav.Link href="#skills">Skills</Nav.Link>
-            <Nav.Link href="#projects">Projects</Nav.Link>
-            <Nav.Link href="#career">Career</Nav.Link>
+          <Nav activeKey={location.pathname}>
+            <Nav.Link href="#aboutme">about me</Nav.Link>
+            <Nav.Link href="#skills">skills</Nav.Link>
+            <Nav.Link href="#projects">projects</Nav.Link>
+            <Nav.Link href="#career">career</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
