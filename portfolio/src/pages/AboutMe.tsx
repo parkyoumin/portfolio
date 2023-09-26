@@ -12,8 +12,8 @@ import "@css/about-me.scss";
 const AboutMe = () => {
   return (
     <>
-      <Container className="about-me">
-        <Row className="pt-5">
+      <Container className="about-me pb-5 mb-5">
+        <Row>
           <Col>
             <span className="title">about me</span>
           </Col>
