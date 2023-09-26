@@ -12,7 +12,7 @@ const styleFlexCenter = {
 const Profile = () => {
   return (
     <>
-      <Container fluid className="profile">
+      <Container fluid className="profile pb-5 mb-5 pt-5">
         <Row className="full-height">
           <Col sm={4} style={styleFlexCenter}>
             <img src={ProfileImg} className="profile-img" />
