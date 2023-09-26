@@ -1,57 +1,99 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import callImg from "@assets/call.svg";
+import dateImg from "@assets/date.svg";
+import emailImg from "@assets/email.svg";
+import locationImg from "@assets/location.svg";
+import personImg from "@assets/person.svg";
+import schoolImg from "@assets/school.svg";
 import "@css/about-me.scss";
-import ProfileImg from "@assets/profile.jpg";
-
-const styleFlexCenter = {
-  display: "flex",
-  alignItems: "center",
-};
 
 const AboutMe = () => {
   return (
     <>
-      <div className="page-wrapper">
-        <Container fluid className="profile">
-          <Row className="full-height">
-            <Col sm={4} style={styleFlexCenter}>
-              <img src={ProfileImg} className="profile-img" />
-            </Col>
+      <Container className="about-me">
+        <Row className="pt-5">
+          <Col>
+            <span className="title">about me</span>
+          </Col>
+        </Row>
 
-            <Col sm={8} style={styleFlexCenter}>
-              <div className="profile-left-wrapper">
-                <div className="profile-title pb-4">
-                  <span>'박유민'</span>
+        <Row className="pt-5">
+          <Col xs={4} className="columns">
+            <div className="info-wrapper">
+              <img src={personImg} />
+              <div className="info-text">
+                <span>
+                  이름
                   <br />
-                  <span>웹 개발자 포트폴리오</span>
-                </div>
-
-                <div className="line"></div>
-
-                <div className="profile-content pt-4">
-                  <span>안녕하세요.</span>
-                  <br />
-                  <span>공부가 취미인 풀 스택 웹 개발자입니다.</span>
-                  <br />
-                  <span>
-                    매우 꼼꼼한 성격, 그리고 공부를 밥 먹듯이 하는 습관이 저의
-                    장점입니다.
-                  </span>
-                  <br />
-                </div>
+                  박유민
+                </span>
               </div>
-            </Col>
-          </Row>
-        </Container>
-
-        <div className="about-me">
-          <Container>
-            <Row>About me</Row>
-            <Row>columns</Row>
-          </Container>
-        </div>
-      </div>
+            </div>
+          </Col>
+          <Col xs={4} className="columns">
+            <div className="info-wrapper">
+              <img src={dateImg} />
+              <div className="info-text">
+                <span>
+                  생년월일
+                  <br />
+                  98.08.29
+                </span>
+              </div>
+            </div>
+          </Col>
+          <Col xs={4} className="columns">
+            <div className="info-wrapper">
+              <img src={locationImg} />
+              <div className="info-text">
+                <span>
+                  주소
+                  <br />
+                  충청남도 아산시
+                </span>
+              </div>
+            </div>
+          </Col>
+          <Col xs={4} className="columns pt-5">
+            <div className="info-wrapper">
+              <img src={callImg} />
+              <div className="info-text">
+                <span>
+                  연락처
+                  <br />
+                  010-2349-2812
+                </span>
+              </div>
+            </div>
+          </Col>
+          <Col xs={4} className="columns pt-5">
+            <div className="info-wrapper">
+              <img src={emailImg} />
+              <div className="info-text">
+                <span>
+                  이메일
+                  <br />
+                  umin980829@naver.com
+                </span>
+              </div>
+            </div>
+          </Col>
+          <Col xs={4} className="columns pt-5">
+            <div className="info-wrapper">
+              <img src={schoolImg} />
+              <div className="info-text">
+                <span>
+                  학력
+                  <br />
+                  순천향대학교(컴퓨터공학과)
+                </span>
+              </div>
+            </div>
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 };

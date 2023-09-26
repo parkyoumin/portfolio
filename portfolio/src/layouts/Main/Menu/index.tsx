@@ -6,7 +6,7 @@ import "@css/menu.scss";
 const Menu = () => {
   return (
     <>
-      <Navbar>
+      <Navbar className="py-3">
         <Container>
           <Navbar.Brand href="#home">Youmin's Portfolio</Navbar.Brand>
           <Nav activeKey={location.pathname}>
