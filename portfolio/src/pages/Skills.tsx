@@ -13,14 +13,14 @@ const Skills = () => {
     <>
       <div id="skills" className="skills-wrapper pb-5">
         <Container className="skills pb-5">
-          <Row className="pt-5">
+          <Row className="py-5">
             <Col>
               <span className="title">skills</span>
             </Col>
           </Row>
 
-          <Row className="pt-5 justify-content-center">
-            <Col xs={3}>
+          <Row className="justify-content-center">
+            <Col lg={3}>
               <div className="skills-box">
                 <div className="p-3" style={{ textAlign: "justify" }}>
                   <span>Frontend</span>
@@ -30,7 +30,7 @@ const Skills = () => {
               </div>
             </Col>
 
-            <Col xs={{ span: 3, offset: 1 }}>
+            <Col lg={{ span: 3, offset: 1 }}>
               <div className="skills-box mb-5">
                 <div className="p-3" style={{ textAlign: "justify" }}>
                   <span>Backend</span>
@@ -48,7 +48,7 @@ const Skills = () => {
               </div>
             </Col>
 
-            <Col xs={{ span: 3, offset: 1 }}>
+            <Col lg={{ span: 3, offset: 1 }}>
               <div className="skills-box mb-5">
                 <div className="p-3" style={{ textAlign: "justify" }}>
                   <span>Certificate</span>
