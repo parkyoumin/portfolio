@@ -12,13 +12,13 @@ const styleFlexCenter = {
 const Profile = () => {
   return (
     <>
-      <Container fluid className="profile pb-5 mb-5 pt-5">
-        <Row className="full-height">
-          <Col sm={4} style={styleFlexCenter}>
+      <Container fluid className="profile pb-5 pt-5">
+        <Row className="row justify-content-center">
+          <Col lg={3} className="mb-3" style={styleFlexCenter}>
             <img src={ProfileImg} className="profile-img" />
           </Col>
 
-          <Col sm={8} style={styleFlexCenter}>
+          <Col lg={6} style={styleFlexCenter}>
             <div className="profile-left-wrapper">
               <div className="profile-title pb-4">
                 <span>'박유민'</span>

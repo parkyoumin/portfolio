@@ -12,7 +12,7 @@ import "@css/about-me.scss";
 const AboutMe = () => {
   return (
     <>
-      <Container className="about-me pb-5 mb-5">
+      <Container id="aboutme" className="about-me py-5 mb-5">
         <Row>
           <Col>
             <span className="title">about me</span>

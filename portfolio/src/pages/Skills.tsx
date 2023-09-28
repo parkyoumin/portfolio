@@ -11,7 +11,7 @@ import "@css/skills.scss";
 const Skills = () => {
   return (
     <>
-      <div className="skills-wrapper pb-5">
+      <div id="skills" className="skills-wrapper pb-5">
         <Container className="skills pb-5">
           <Row className="pt-5">
             <Col>
