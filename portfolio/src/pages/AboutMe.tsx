@@ -14,14 +14,14 @@ const AboutMe = () => {
     <>
       <div id="aboutme" className="aboutme-wrapper pb-5">
         <Container className="about-me pb-5 pt-4">
-          <Row className="py-5">
+          <Row className="pt-5">
             <Col>
-              <span className="title">ABOUT ME</span>
+              <span className="title"># ABOUT ME</span>
             </Col>
           </Row>
 
           <Row>
-            <Col xs={4} className="columns">
+            <Col lg={4} className="columns pt-5">
               <div className="info-wrapper">
                 <img src={personImg} />
                 <div className="info-text">
@@ -33,7 +33,7 @@ const AboutMe = () => {
                 </div>
               </div>
             </Col>
-            <Col xs={4} className="columns">
+            <Col lg={4} className="columns pt-5">
               <div className="info-wrapper">
                 <img src={dateImg} />
                 <div className="info-text">
@@ -45,7 +45,7 @@ const AboutMe = () => {
                 </div>
               </div>
             </Col>
-            <Col xs={4} className="columns">
+            <Col lg={4} className="columns pt-5">
               <div className="info-wrapper">
                 <img src={locationImg} />
                 <div className="info-text">
@@ -57,7 +57,7 @@ const AboutMe = () => {
                 </div>
               </div>
             </Col>
-            <Col xs={4} className="columns pt-5">
+            <Col lg={4} className="columns pt-5">
               <div className="info-wrapper">
                 <img src={callImg} />
                 <div className="info-text">
@@ -69,7 +69,7 @@ const AboutMe = () => {
                 </div>
               </div>
             </Col>
-            <Col xs={4} className="columns pt-5">
+            <Col lg={4} className="columns pt-5">
               <div className="info-wrapper">
                 <img src={emailImg} />
                 <div className="info-text">
@@ -81,7 +81,7 @@ const AboutMe = () => {
                 </div>
               </div>
             </Col>
-            <Col xs={4} className="columns pt-5">
+            <Col lg={4} className="columns pt-5">
               <div className="info-wrapper">
                 <img src={schoolImg} />
                 <div className="info-text">

@@ -15,13 +15,13 @@ const Skills = () => {
         <Container className="skills pb-5 pt-4">
           <Row className="py-5">
             <Col>
-              <span className="title">SKILLS</span>
+              <span className="title"># SKILLS</span>
             </Col>
           </Row>
 
           <Row className="justify-content-center">
             <Col lg={3}>
-              <div className="skills-box">
+              <div className="skills-box mb-5">
                 <div className="p-3" style={{ textAlign: "justify" }}>
                   <span>Frontend</span>
                   <hr />
@@ -39,7 +39,7 @@ const Skills = () => {
                 </div>
               </div>
 
-              <div className="skills-box">
+              <div className="skills-box mb-5">
                 <div className="p-3" style={{ textAlign: "justify" }}>
                   <span>Version Control</span>
                   <hr />
@@ -57,7 +57,7 @@ const Skills = () => {
                 </div>
               </div>
 
-              <div className="skills-box">
+              <div className="skills-box mb-5">
                 <div className="p-3" style={{ textAlign: "justify" }}>
                   <span>ETC</span>
                   <hr />

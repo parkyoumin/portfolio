@@ -11,10 +11,8 @@ const Menu = () => {
   };
 
   useEffect(() => {
-    function scrollListener() {
-      window.addEventListener("scroll", updateScrollY);
-    }
-    scrollListener();
+    window.addEventListener("scroll", updateScrollY);
+
     return () => {
       window.removeEventListener("scroll", updateScrollY);
     };
