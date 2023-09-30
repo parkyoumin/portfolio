@@ -19,7 +19,7 @@ const Button = styled.div`
 `;
 
 const TopButton = () => {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
 
   const handleScroll = () => {
     const { scrollY } = window;
