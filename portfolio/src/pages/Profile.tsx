@@ -14,11 +14,11 @@ const Profile = () => {
     <>
       <Container id="home" fluid className="profile pb-5 pt-5">
         <Row className="row justify-content-center">
-          <Col lg={3} className="mb-3" style={styleFlexCenter}>
+          <Col lg={3} className="mb-3 pt-4" style={styleFlexCenter}>
             <img src={ProfileImg} className="profile-img" />
           </Col>
 
-          <Col lg={6} style={styleFlexCenter}>
+          <Col lg={6} className="pt-4" style={styleFlexCenter}>
             <div className="profile-left-wrapper">
               <div className="profile-title pb-4">
                 <span>'박유민'</span>
