@@ -12,10 +12,10 @@ const Skills = () => {
   return (
     <>
       <div id="skills" className="skills-wrapper pb-5">
-        <Container className="skills pb-5">
+        <Container className="skills pb-5 pt-4">
           <Row className="py-5">
             <Col>
-              <span className="title">skills</span>
+              <span className="title">SKILLS</span>
             </Col>
           </Row>
 
@@ -24,7 +24,7 @@ const Skills = () => {
               <div className="skills-box">
                 <div className="p-3" style={{ textAlign: "justify" }}>
                   <span>Frontend</span>
-                  <div className="under-line my-2"></div>
+                  <hr />
                   <img src={frontendImg} />
                 </div>
               </div>
@@ -34,7 +34,7 @@ const Skills = () => {
               <div className="skills-box mb-5">
                 <div className="p-3" style={{ textAlign: "justify" }}>
                   <span>Backend</span>
-                  <div className="under-line my-2"></div>
+                  <hr />
                   <img src={backendImg} />
                 </div>
               </div>
@@ -42,7 +42,7 @@ const Skills = () => {
               <div className="skills-box">
                 <div className="p-3" style={{ textAlign: "justify" }}>
                   <span>Version Control</span>
-                  <div className="under-line my-2"></div>
+                  <hr />
                   <img src={versionControlImg} />
                 </div>
               </div>
@@ -52,7 +52,7 @@ const Skills = () => {
               <div className="skills-box mb-5">
                 <div className="p-3" style={{ textAlign: "justify" }}>
                   <span>Certificate</span>
-                  <div className="under-line my-2"></div>
+                  <hr />
                   <img src={certificateImg} />
                 </div>
               </div>
@@ -60,7 +60,7 @@ const Skills = () => {
               <div className="skills-box">
                 <div className="p-3" style={{ textAlign: "justify" }}>
                   <span>ETC</span>
-                  <div className="under-line my-2"></div>
+                  <hr />
                   <img src={etcImg} />
                 </div>
               </div>

@@ -3,8 +3,8 @@
   min-height: 50vh;
   background: linear-gradient(
     180deg,
-    rgba(226, 194, 251, 0.6) 0%,
-    rgba(166, 193, 238, 0.1) 100%
+    #ff5e0062 0%,
+    rgba(255, 196, 0, 0.282) 100%
   );
   text-align: center;
 
@@ -25,7 +25,7 @@
   }
 
   .profile-title {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   .line {
@@ -33,7 +33,7 @@
     margin: auto;
     height: 3px;
     width: 50px;
-    background-color: #7000ff;
+    background-color: #ff5f00;
   }
 
   .profile-content {

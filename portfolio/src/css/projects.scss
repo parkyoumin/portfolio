@@ -1,13 +1,13 @@
 .projects-wrapper {
   width: 100%;
-  background-color: rgb(255, 196, 0);
+  background-color: #ff5f00;
 }
 
 .projects {
   text-align: center;
   .title {
-    color: black;
-    font-size: 2em;
+    color: white;
+    font-size: 2.5em;
     font-weight: 600;
   }
 
@@ -15,12 +15,22 @@
     background-color: white;
     border-radius: 15px;
 
+    .project-title {
+      color: black;
+      font-size: 2em;
+      font-weight: 600;
+    }
+
     img {
       width: 100%;
     }
 
     .date {
       color: #7b7b7b;
+    }
+
+    a {
+      text-decoration: none;
     }
   }
 }

@@ -6,7 +6,12 @@ import Projects from "@pages/Projects";
 const Page = () => {
   return (
     <>
-      <div data-bs-target="#navbar-main" data-bs-offset="0">
+      <div
+        data-bs-spy="scroll"
+        data-bs-target="#navbar-main"
+        data-bs-offset="20"
+        className="scrollspy-example"
+      >
         <Profile></Profile>
         <AboutMe></AboutMe>
         <Skills></Skills>

@@ -1,16 +1,31 @@
-.navbar-brand {
-  color: rgba(0, 0, 0, 0.54) !important;
-}
 .navbar-nav {
   font-size: 0.9em;
-  font-weight: 600;
-}
-.nav-link {
-  color: rgba(0, 0, 0, 0.54) !important;
-}
-.active {
-  color: black !important;
 }
 .nav {
   margin-left: auto !important;
+}
+.visible-background {
+  background-color: white !important;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  .nav-link {
+    color: black !important;
+    &:hover {
+      color: #ff5f00 !important;
+    }
+  }
+  .navbar-brand {
+    color: black !important;
+  }
+}
+.invisible-background {
+  background: transparent;
+  .nav-link {
+    color: rgba(0, 0, 0, 0.54) !important;
+    &:hover {
+      color: #000000 !important;
+    }
+  }
+  .navbar-brand {
+    color: rgba(0, 0, 0, 0.54) !important;
+  }
 }
