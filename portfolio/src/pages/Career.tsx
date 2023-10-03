@@ -1,10 +1,12 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { useTranslation } from "react-i18next";
 import sindohImg from "@assets/sindoh.png";
 import "@css/career.scss";
 
 const Career = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div id="career" className="career-wrapper">
@@ -16,20 +18,18 @@ const Career = () => {
           </Row>
 
           <Row className="p-4 mb-4">
-            <Col lg={{ span: 2, offset: 1 }} className="image-wrapper">
-              <img src={sindohImg} className="pb-5" />
+            <Col lg={{ span: 2, offset: 1 }} xs={{ span: 6, offset: 3 }}>
+              <div className="image-wrapper">
+                <img src={sindohImg} className="pb-5" />
+              </div>
             </Col>
-            <Col lg={8} className="text-wrapper px-5">
-              <span className="company-title">신도리코</span>
+            <Col lg={8} className="text-wrapper px-4">
+              <span className="company-title">{t(`career.sindoh.title`)}</span>
               <br />
-              <span className="date">2022.06 ~ 2023.07</span>
+              <span className="date">{t(`career.sindoh.date`)}</span>
               <br />
               <br />
-              <span>
-                복합기 솔루션 풀스택 웹 개발자로서 기존 솔루션 유지보수 및
-                고객사 특화 개발 업무(Spring, JAVA, JSP, MyBatis), 신규 솔루션
-                프론트 개발 업무(Vue.js)를 담당했습니다.{" "}
-              </span>
+              <span>{t(`career.sindoh.info`)}</span>
             </Col>
           </Row>
         </Container>

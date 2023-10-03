@@ -8,8 +8,10 @@ import locationImg from "@assets/location.svg";
 import personImg from "@assets/person.svg";
 import schoolImg from "@assets/school.svg";
 import "@css/about-me.scss";
+import { useTranslation } from "react-i18next";
 
 const AboutMe = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div id="aboutme" className="aboutme-wrapper pb-5">
@@ -26,9 +28,9 @@ const AboutMe = () => {
                 <img src={personImg} />
                 <div className="info-text">
                   <span>
-                    이름
+                    <b>{t(`aboutme.name`)}</b>
                     <br />
-                    박유민
+                    {t(`aboutme.resultName`)}
                   </span>
                 </div>
               </div>
@@ -38,9 +40,9 @@ const AboutMe = () => {
                 <img src={dateImg} />
                 <div className="info-text">
                   <span>
-                    생년월일
+                    <b>{t(`aboutme.birth`)}</b>
                     <br />
-                    98.08.29
+                    {t(`aboutme.resultBirth`)}
                   </span>
                 </div>
               </div>
@@ -50,9 +52,9 @@ const AboutMe = () => {
                 <img src={locationImg} />
                 <div className="info-text">
                   <span>
-                    주소
+                    <b>{t(`aboutme.address`)}</b>
                     <br />
-                    충청남도 아산시
+                    {t(`aboutme.resultAddress`)}
                   </span>
                 </div>
               </div>
@@ -62,9 +64,9 @@ const AboutMe = () => {
                 <img src={callImg} />
                 <div className="info-text">
                   <span>
-                    연락처
+                    <b>{t(`aboutme.contact`)}</b>
                     <br />
-                    010-2349-2812
+                    {t(`aboutme.resultContact`)}
                   </span>
                 </div>
               </div>
@@ -74,9 +76,9 @@ const AboutMe = () => {
                 <img src={emailImg} />
                 <div className="info-text">
                   <span>
-                    이메일
+                    <b>{t(`aboutme.email`)}</b>
                     <br />
-                    umin980829@naver.com
+                    {t(`aboutme.resultEmail`)}
                   </span>
                 </div>
               </div>
@@ -86,9 +88,9 @@ const AboutMe = () => {
                 <img src={schoolImg} />
                 <div className="info-text">
                   <span>
-                    학력
+                    <b>{t(`aboutme.school`)}</b>
                     <br />
-                    순천향대학교(컴퓨터공학과)
+                    {t(`aboutme.resultSchool`)}
                   </span>
                 </div>
               </div>

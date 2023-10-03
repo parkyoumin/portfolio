@@ -3,6 +3,8 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "@css/menu.scss";
 import { useEffect, useState } from "react";
+import i18n from "@/locales/i18n";
+import { NavDropdown } from "react-bootstrap";
 
 const Menu = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -17,6 +19,10 @@ const Menu = () => {
       window.removeEventListener("scroll", updateScrollY);
     };
   });
+
+  const changeLanguage = (lang: string) => {
+    i18n.changeLanguage(lang);
+  };
 
   return (
     <>
@@ -43,6 +49,14 @@ const Menu = () => {
               <Nav.Link href="#career" className="px-3">
                 Career
               </Nav.Link>
+              <NavDropdown title="Language">
+                <NavDropdown.Item onClick={() => changeLanguage("ko")}>
+                  한국어
+                </NavDropdown.Item>
+                <NavDropdown.Item onClick={() => changeLanguage("en")}>
+                  English
+                </NavDropdown.Item>
+              </NavDropdown>
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -28,4 +28,10 @@
   .navbar-brand {
     color: rgba(0, 0, 0, 0.54) !important;
   }
+  .dropdown-menu {
+    background-color: transparent;
+  }
+  .dropdown-item:hover {
+    background-color: rgba(0, 0, 0, 0.175);
+  }
 }
