@@ -1,19 +1,23 @@
 .profile {
   width: 100%;
-  height: 50vh;
+  min-height: 50vh;
   background: linear-gradient(
     180deg,
-    rgba(226, 194, 251, 0.6) 0%,
-    rgba(166, 193, 238, 0.1) 100%
+    #ff5e0062 0%,
+    rgba(255, 196, 0, 0.282) 100%
   );
   text-align: center;
+
+  .row {
+    min-height: 50vh;
+  }
 
   .profile-img {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 200px;
     width: 250px;
     height: 250px;
-    margin-left: auto;
+    margin: auto;
   }
 
   .profile-left-wrapper {
@@ -21,7 +25,7 @@
   }
 
   .profile-title {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   .line {
@@ -29,7 +33,7 @@
     margin: auto;
     height: 3px;
     width: 50px;
-    background-color: #7000ff;
+    background-color: #ff5f00;
   }
 
   .profile-content {

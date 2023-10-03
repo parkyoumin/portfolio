@@ -5,6 +5,8 @@ import App from "./App";
 import { createGlobalStyle } from "styled-components";
 import "./css/fonts.css";
 
+import "./locales/i18n";
+
 const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'GmarketSans';

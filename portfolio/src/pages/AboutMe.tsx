@@ -8,92 +8,96 @@ import locationImg from "@assets/location.svg";
 import personImg from "@assets/person.svg";
 import schoolImg from "@assets/school.svg";
 import "@css/about-me.scss";
+import { useTranslation } from "react-i18next";
 
 const AboutMe = () => {
+  const { t } = useTranslation();
   return (
     <>
-      <Container className="about-me pb-5 mb-5">
-        <Row>
-          <Col>
-            <span className="title">about me</span>
-          </Col>
-        </Row>
+      <div id="aboutme" className="aboutme-wrapper pb-5">
+        <Container className="about-me pb-5 pt-4">
+          <Row className="pt-5">
+            <Col>
+              <span className="title"># ABOUT ME</span>
+            </Col>
+          </Row>
 
-        <Row className="pt-5">
-          <Col xs={4} className="columns">
-            <div className="info-wrapper">
-              <img src={personImg} />
-              <div className="info-text">
-                <span>
-                  이름
-                  <br />
-                  박유민
-                </span>
+          <Row>
+            <Col lg={4} className="columns pt-5">
+              <div className="info-wrapper">
+                <img src={personImg} />
+                <div className="info-text">
+                  <span>
+                    <b>{t(`aboutme.name`)}</b>
+                    <br />
+                    {t(`aboutme.resultName`)}
+                  </span>
+                </div>
               </div>
-            </div>
-          </Col>
-          <Col xs={4} className="columns">
-            <div className="info-wrapper">
-              <img src={dateImg} />
-              <div className="info-text">
-                <span>
-                  생년월일
-                  <br />
-                  98.08.29
-                </span>
+            </Col>
+            <Col lg={4} className="columns pt-5">
+              <div className="info-wrapper">
+                <img src={dateImg} />
+                <div className="info-text">
+                  <span>
+                    <b>{t(`aboutme.birth`)}</b>
+                    <br />
+                    {t(`aboutme.resultBirth`)}
+                  </span>
+                </div>
               </div>
-            </div>
-          </Col>
-          <Col xs={4} className="columns">
-            <div className="info-wrapper">
-              <img src={locationImg} />
-              <div className="info-text">
-                <span>
-                  주소
-                  <br />
-                  충청남도 아산시
-                </span>
+            </Col>
+            <Col lg={4} className="columns pt-5">
+              <div className="info-wrapper">
+                <img src={locationImg} />
+                <div className="info-text">
+                  <span>
+                    <b>{t(`aboutme.address`)}</b>
+                    <br />
+                    {t(`aboutme.resultAddress`)}
+                  </span>
+                </div>
               </div>
-            </div>
-          </Col>
-          <Col xs={4} className="columns pt-5">
-            <div className="info-wrapper">
-              <img src={callImg} />
-              <div className="info-text">
-                <span>
-                  연락처
-                  <br />
-                  010-2349-2812
-                </span>
+            </Col>
+            <Col lg={4} className="columns pt-5">
+              <div className="info-wrapper">
+                <img src={callImg} />
+                <div className="info-text">
+                  <span>
+                    <b>{t(`aboutme.contact`)}</b>
+                    <br />
+                    {t(`aboutme.resultContact`)}
+                  </span>
+                </div>
               </div>
-            </div>
-          </Col>
-          <Col xs={4} className="columns pt-5">
-            <div className="info-wrapper">
-              <img src={emailImg} />
-              <div className="info-text">
-                <span>
-                  이메일
-                  <br />
-                  umin980829@naver.com
-                </span>
+            </Col>
+            <Col lg={4} className="columns pt-5">
+              <div className="info-wrapper">
+                <img src={emailImg} />
+                <div className="info-text">
+                  <span>
+                    <b>{t(`aboutme.email`)}</b>
+                    <br />
+                    {t(`aboutme.resultEmail`)}
+                  </span>
+                </div>
               </div>
-            </div>
-          </Col>
-          <Col xs={4} className="columns pt-5">
-            <div className="info-wrapper">
-              <img src={schoolImg} />
-              <div className="info-text">
-                <span>
-                  학력
-                  <br />
-                  순천향대학교(컴퓨터공학과)
-                </span>
+            </Col>
+            <Col lg={4} className="columns pt-5">
+              <div className="info-wrapper">
+                <img src={schoolImg} />
+                <div className="info-text">
+                  <span>
+                    <b>{t(`aboutme.school`)}</b>
+                    <br />
+                    {t(`aboutme.resultSchool`)}
+                  </span>
+                </div>
               </div>
-            </div>
-          </Col>
-        </Row>
-      </Container>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </>
   );
 };
