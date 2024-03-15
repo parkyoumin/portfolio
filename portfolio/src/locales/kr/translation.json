@@ -20,6 +20,9 @@
     "school": "학력",
     "resultSchool": "순천향대학교(컴퓨터공학과)"
   },
+  "skills": {
+    "certificate": "정보처리기사"
+  },
   "projects": {
     "function": "주요기능",
     "portfolio": {

@@ -1,32 +1,25 @@
 .skills-wrapper {
   width: 100%;
-  background-color: rgb(255, 196, 0);
+  background-color: rgb(255, 252, 243);
 }
 .skills {
-  text-align: center;
   .title {
+    text-align: center;
     color: black;
     font-size: 2.5em;
     font-weight: 600;
   }
-
-  .skills-box {
-    background: #ffffff;
-    box-shadow:
-      0 19px 38px rgba(0, 0, 0, 0.3),
-      0 15px 12px rgba(0, 0, 0, 0.22);
-    border-radius: 20px;
-    transition: 0.2s ease-in-out;
-
-    span {
-      font-size: 1.3em;
-    }
-    img {
-      width: 100%;
-    }
+  .seperator {
+    height: 1px;
+    background-color: rgb(111, 111, 111);
   }
-  .skills-box:hover {
-    transform: translateY(10px);
-    cursor: pointer;
+  .skill-title {
+    font-size: 1.2em;
+    font-weight: 500;
+    padding-bottom: 20px;
+  }
+
+  li {
+    padding-bottom: 10px;
   }
 }

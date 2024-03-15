@@ -20,6 +20,9 @@
     "school": "GRADUATE",
     "resultSchool": "Soonchunhyang University(computer science)"
   },
+  "skills": {
+    "certificate": "Engineer Information Processing"
+  },
   "projects": {
     "function": "Keys",
     "portfolio": {
