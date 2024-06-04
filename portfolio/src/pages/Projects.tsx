@@ -3,6 +3,15 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { useTranslation } from "react-i18next";
 import ImageSlider from "@components/ImageSlider";
+// knockk
+import knockkImg1 from "@assets/knockk1.png";
+import knockkImg2 from "@assets/knockk2.png";
+import knockkImg3 from "@assets/knockk3.png";
+import knockkImg4 from "@assets/knockk4.png";
+import knockkImg5 from "@assets/knockk5.png";
+import knockkImg6 from "@assets/knockk6.png";
+import knockkImg7 from "@assets/knockk7.png";
+import knockkImg8 from "@assets/knockk8.png";
 // portfolio
 import portfolioImg1 from "@assets/portfolio1.png";
 import portfolioImg2 from "@assets/portfolio2.png";
@@ -39,7 +48,17 @@ import "@css/projects.scss";
 import styled from "styled-components";
 
 // Images
-const images: string[] = [
+const knockkImages: string[] = [
+  knockkImg1,
+  knockkImg2,
+  knockkImg3,
+  knockkImg4,
+  knockkImg5,
+  knockkImg6,
+  knockkImg7,
+  knockkImg8,
+];
+const portfolioImages: string[] = [
   portfolioImg1,
   portfolioImg2,
   portfolioImg3,
@@ -74,6 +93,99 @@ const Projects = () => {
             </Col>
           </Row>
 
+          {/* knockk */}
+          <Row className="project p-4 m-2 mb-4">
+            <Col xs={12} className="pb-2">
+              <span className="project-title">
+                {t(`projects.knockk.title`)}
+              </span>
+            </Col>
+
+            <Col xs={12} className="pb-4">
+              <span className="date">
+                {t(`projects.knockk.date`)} ({t(`projects.knockk.project`)})
+              </span>
+            </Col>
+
+            <Col lg={4} className="pb-4">
+              <ImageSlider images={knockkImages}></ImageSlider>
+            </Col>
+
+            <Col lg={8}>
+              <Row>
+                <Col xs={12} style={{ textAlign: "start" }}>
+                  <span>
+                    <b>{t(`projects.knockk.content1`)}</b>
+                    {t(`projects.knockk.content2`)}
+                  </span>
+                  <br />
+                  <br />
+                  <span>
+                    <StyleSpan>{t(`projects.knockk.content3`)}</StyleSpan>
+                    {t(`projects.knockk.content4`)}{" "}
+                    <StyleSpan>{t(`projects.knockk.content5`)}</StyleSpan>
+                    {t(`projects.knockk.content6`)}{" "}
+                    <StyleSpan>{t(`projects.knockk.content7`)}</StyleSpan>
+                    {t(`projects.knockk.content8`)}
+                  </span>
+                  <br />
+                  <br />
+                  <span>
+                    <StyleSpan>{t(`projects.knockk.content9`)}</StyleSpan>
+                    {t(`projects.knockk.content10`)}{" "}
+                  </span>
+                  <br />
+                  <br />
+                  <span>
+                    <StyleSpan>{t(`projects.knockk.content11`)}</StyleSpan>
+                    {t(`projects.knockk.content12`)}{" "}
+                    <StyleSpan>{t(`projects.knockk.content13`)}</StyleSpan>
+                    {t(`projects.knockk.content14`)}{" "}
+                    <StyleSpan>{t(`projects.knockk.content15`)}</StyleSpan>
+                    {t(`projects.knockk.content16`)}
+                  </span>
+                  <br />
+                  <br />
+                  <span>
+                    {t(`projects.knockk.content17`)}{" "}
+                    <StyleSpan>{t(`projects.knockk.content18`)}</StyleSpan>
+                    {t(`projects.knockk.content19`)}
+                  </span>
+                  <br />
+
+                  <a href="https://www.notion.so/knockk-cc288873aed2459cac05e5514ea70c7e">
+                    <Button variant="warning" className="mt-3">
+                      VIDEO
+                    </Button>
+                  </a>
+                </Col>
+              </Row>
+              <hr />
+
+              <Row>
+                <Col lg={3}>
+                  <div style={{ display: "flex", alignItems: "flex-start" }}>
+                    <img src={LabelImg} style={{ width: "20px" }} />
+                    <span className="px-1">{t(`projects.function`)}</span>
+                  </div>
+                </Col>
+                <Col lg={9} style={{ textAlign: "start" }} className="pb-3">
+                  <span>{t(`projects.knockk.function`)}</span>
+                </Col>
+
+                <Col lg={3}>
+                  <div style={{ display: "flex", alignItems: "flex-start" }}>
+                    <img src={LabelImg} style={{ width: "20px" }} />
+                    <span className="px-1">Frontend</span>
+                  </div>
+                </Col>
+                <Col lg={9} style={{ textAlign: "start" }} className="pb-3">
+                  <span>Flutter, React, Next.js, TypeScript, Antd</span>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+
           {/* 포트폴리오 */}
           <Row className="project p-4 m-2 mb-4">
             <Col xs={12} className="pb-2">
@@ -90,7 +202,7 @@ const Projects = () => {
             </Col>
 
             <Col lg={6} className="pb-4">
-              <ImageSlider images={images}></ImageSlider>
+              <ImageSlider images={portfolioImages}></ImageSlider>
             </Col>
 
             <Col lg={6}>

@@ -23,7 +23,7 @@ const Skills = () => {
             <Col lg={8}>
               <ul>
                 <li>HTML5, CSS3, Javascript (ES6+), Typescript</li>
-                <li>React, Vue</li>
+                <li>React, Vue, Flutter</li>
                 <li>Bootstrap, Quasar, antd</li>
               </ul>
             </Col>

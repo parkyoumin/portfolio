@@ -25,6 +25,31 @@
   },
   "projects": {
     "function": "Keys",
+    "knockk": {
+      "title": "Knockk",
+      "date": "2023.11 ~ 2024.05",
+      "project": "team project",
+      "content1": "Knockk is a social event management web app that allows users to easily create and manage events via a website or mobile app while facilitating social networking among participants.",
+      "content2": "",
+      "content3": "As the frontend developer",
+      "content4": ", I led the development using ",
+      "content5": "React. ",
+      "content6": "Despite the challenges of concurrent design and development, I increased efficiency by organizing frequently used components and integrating ",
+      "content7": "storybook",
+      "content8": " to streamline development once the design was finalized. This approach allowed me to complete the development ahead of schedule and respond quickly to frequent changes, ensuring a flexible development process.",
+      "content9": "For collaboration with the backend developer",
+      "content10": ", we utilized Notion templates to document and request the necessary APIs (request, response), and continuously communicated to share the current progress of both frontend and backend development.",
+      "content11": "For overall team collaboration",
+      "content12": ", we first estimated the development efforts for each function by each developer and communicated this to the designers and planners, allowing for the scheduling of the ",
+      "content13": "first QA",
+      "content14": ". Post-first QA, we documented discovered bugs and issues in Notion and allocated time for fixes. Upon fixing, we promptly conducted the ",
+      "content15": "second QA",
+      "content16": " to ensure thorough testing.",
+      "content17": "In consultation with the team, we decided to extend the project to include mobile app accessibility. I took on the additional responsibility of ",
+      "content18": "implementing the WebView and push notification features using Flutter",
+      "content19": ". Despite having no prior experience in app development, I volunteered for this task, seeing it as a valuable learning opportunity. Over approximately a month of study and development, I encountered challenges related to hardware dependencies and the different handling requirements of iOS and Android. Nonetheless, I successfully completed the tasks and gained significant personal growth through this experience.",
+      "function": "event creation / management / participation, profile, group messaging, comments, photo upload, friends in attendance"
+    },
     "portfolio": {
       "title": "portfolio",
       "date": "2023.09",
@@ -128,6 +153,11 @@
       "title": "sindoh",
       "date": "2022.06 ~ 2023.07",
       "info": "As a full-stack web developer for multifunctional solutions, I was responsible for maintaining existing solutions, client-specific development (Spring, JAVA, JSP, MyBatis), and front-end development of new solutions (Vue.js)."
+    },
+    "spreadit": {
+      "title": "spreadit",
+      "date": "2023.11 ~ 2024.05",
+      "info": "As a web app developer for the Knockk project (event management social networking), I was responsible for front-end development using React, Next.js, and Flutter."
     }
   }
 }
